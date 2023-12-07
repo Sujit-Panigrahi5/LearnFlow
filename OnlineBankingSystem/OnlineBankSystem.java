@@ -26,8 +26,8 @@ public class OnlineBankSystem {
             System.out.println("Balance : " + this.balance);
         }
 
-        // customis your name method
-        public void customisYourName(String newname) {
+        // customize  your name method
+        public void customizeYourName(String newname) {
             this.name = newname;
             for (int i = 0; i < this.history.size(); i++) {
                 this.history.get(i).sender = newname;
@@ -206,7 +206,7 @@ public class OnlineBankSystem {
         sujit.checkbalance();
         sujit.checkTransactionHistory();
         System.out.println(sujit.balance);
-        sujit.customisYourName("Sujit Panigrahi");
+        sujit.customizeYourName("Sujit Panigrahi");
         sujit.checkTransactionHistory();
         System.out.println("print the personal info of sujit ");
         sujit.showPersonalInfo();
